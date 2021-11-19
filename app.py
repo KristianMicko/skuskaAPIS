@@ -33,4 +33,5 @@ def delete(id):
     del ovocie[int(id)]
     return jsonify("deleted"),204
 
-app.run()
+if __name__ == "__main__":
+    app.run()
