@@ -1,2 +1,1 @@
-flask-cors
-mysql-connector-python
+Flask==0.12.1
