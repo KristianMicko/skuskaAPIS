@@ -35,5 +35,5 @@ jobs:
         with:
           app-name: 'apisVysvetlenie'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_72CD4074237649499AF53DB6E8040D51 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_037FFC17A85B48BA9B7C6A304B8989CF }}
           package: '.\\app.zip'
