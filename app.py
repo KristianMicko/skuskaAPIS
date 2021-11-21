@@ -1,12 +1,12 @@
 from flask import Flask
 from flask import request
 from flask import jsonify
-from flask_cors import CORS
-import mysql.connector as MYSQL
+#from flask_cors import CORS
+#import mysql.connector as MYSQL
 
 
 app = Flask(__name__)
-CORS(app)
+#CORS(app)
 
 ovocie = ["jablko","pomaranc","jahoda"]
 
