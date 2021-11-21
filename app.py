@@ -12,7 +12,8 @@ ovocie = ["jablko","pomaranc","jahoda"]
 
 @app.route("/", methods=["GET"])
 def main():
-    return jsonify({"ovocie":ovocie}),200
+    return "Hello world"
+    #return jsonify({"ovocie":ovocie}),200
 
 @app.route("/vytvorit", methods=["POST"])
 def create():
