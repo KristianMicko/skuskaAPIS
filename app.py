@@ -2,7 +2,7 @@ from flask import Flask
 from flask import request
 from flask import jsonify
 from flask_cors import CORS
-#import mysql.connector as MYSQL
+import mysql.connector as MYSQL
 
 
 app = Flask(__name__)
@@ -12,8 +12,7 @@ ovocie = ["jablko","pomaranc","jahoda"]
 
 @app.route("/", methods=["GET"])
 def main():
-    return "Hello world"
-    #return jsonify({"ovocie":ovocie}),200
+    return jsonify({"ovocie":ovocie}),200
 
 @app.route("/vytvorit", methods=["POST"])
 def create():
