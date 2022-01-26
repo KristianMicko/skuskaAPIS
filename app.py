@@ -15,6 +15,19 @@ def main():
     x.close()
     return jsonify(t),200
 
+@app.route("/cars", methods=["GET"])
+def main():
+    x = open("cars.json")
+    t = json.load(x)
+    x.close()
+    return jsonify(t),200
+
+@app.route("/products", methods=["GET"])
+def main():
+    x = open("products.json")
+    t = json.load(x)
+    x.close()
+    return jsonify(t),200
 
 if __name__ == "__main__":
     app.run()
